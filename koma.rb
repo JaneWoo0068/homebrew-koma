@@ -5,13 +5,13 @@
 class Koma < Formula
   desc "The ultimate CLI manga downloader!"
   homepage "https://github.com/JaneWoo0068/koma"
-  version "1.0.2"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JaneWoo0068/koma/releases/download/v1.0.2/koma_1.0.2_Darwin_x86_64.tar.gz"
-      sha256 "fa6ab2497f3c198843d3191ad44fa7b7afb05f8fb201abfaa91f2935599038e1"
+      url "https://github.com/JaneWoo0068/koma/releases/download/v1.1.0/koma_1.1.0_Darwin_x86_64.tar.gz"
+      sha256 "7a85601e2a5686821c4c59e761e0849731a32cb177ac4ba0148da4eb8b0c2767"
 
       define_method(:install) do
         bin.install "koma"
@@ -21,8 +21,8 @@ class Koma < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JaneWoo0068/koma/releases/download/v1.0.2/koma_1.0.2_Darwin_arm64.tar.gz"
-      sha256 "4810e87ba7a6085c4d30dae58c4aab7e87741a7d9ceaf30fc1eee1758772cc59"
+      url "https://github.com/JaneWoo0068/koma/releases/download/v1.1.0/koma_1.1.0_Darwin_arm64.tar.gz"
+      sha256 "684574aca808108bab1cd430e973f7d259b328f11fa6a4bf30d098ffd86e5b12"
 
       define_method(:install) do
         bin.install "koma"
@@ -35,8 +35,8 @@ class Koma < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JaneWoo0068/koma/releases/download/v1.0.2/koma_1.0.2_Linux_x86_64.tar.gz"
-      sha256 "39277e8cdee921b47a8e1e428dc1672af75dfdfadfd17a7d61359d3e92044e06"
+      url "https://github.com/JaneWoo0068/koma/releases/download/v1.1.0/koma_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "26de3c9c0c4ed0253e843caff489983d853b6f6f7e7be03c62dc38553aa2fb38"
       define_method(:install) do
         bin.install "koma"
         bash_completion.install "completions/koma.bash" => "koma"
@@ -45,8 +45,8 @@ class Koma < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/JaneWoo0068/koma/releases/download/v1.0.2/koma_1.0.2_Linux_arm.tar.gz"
-      sha256 "edeada09986e1fa835926430cb687d8349e96f92a685693adc973eb7be4a49f0"
+      url "https://github.com/JaneWoo0068/koma/releases/download/v1.1.0/koma_1.1.0_Linux_arm.tar.gz"
+      sha256 "c55bf65c2cc5f7cc1e28c4e4866faa28c15acd09a81bfa1225d6efe3a96502f7"
       define_method(:install) do
         bin.install "koma"
         bash_completion.install "completions/koma.bash" => "koma"
@@ -55,8 +55,8 @@ class Koma < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JaneWoo0068/koma/releases/download/v1.0.2/koma_1.0.2_Linux_arm64.tar.gz"
-      sha256 "19d8978e22694ff19c0bb82b35b868d0e4d9e9032a83289f630908f7b4b66bf8"
+      url "https://github.com/JaneWoo0068/koma/releases/download/v1.1.0/koma_1.1.0_Linux_arm64.tar.gz"
+      sha256 "680fd5b8832e7ae0c5c06cb66cc3f419c8aa2085721531aae9079038c62f4c41"
       define_method(:install) do
         bin.install "koma"
         bash_completion.install "completions/koma.bash" => "koma"
